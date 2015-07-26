@@ -157,6 +157,10 @@ section#intro {
 		color: #3ea8b8;
 		border-color: #3ea8b8;
 	}
+	section#intro a.link-bouncing-pixel:hover {
+		color: #10a4e3;
+		border-color: #10a4e3;
+	}
 
 ul.social {
 	list-style: none;
@@ -251,6 +255,9 @@ section.project p {
 	line-height: 1.6;
 	text-align: left;
 }
+section.project p a:hover {
+	text-decoration: underline;
+}
 section.project p.linkout {
 	margin-top: 60px;
 	line-height: 24px;
@@ -264,7 +271,7 @@ section.project p.linkout i.fa-globe {
 	position: relative;
 	top: 0px;
 }
-section.project p.linkout:hover i.fa-long-arrow-right {
+section.project p.linkout a:hover i.fa-long-arrow-right {
 	position: relative;
 	left: 10px;
 	-webkit-transition-property: left;
@@ -283,6 +290,23 @@ section.project p.linkout:hover i.fa-long-arrow-right {
 section.project .hero {
 	margin-bottom: 70px;
 }
+
+	section#firesauce {
+		background: #eb5900;
+		text-align: center;
+	}
+	section#firesauce h2 {
+		color: #fff;
+	}
+	section#firesauce h3 {
+		color: rgba(255, 255, 255, 0.71);
+	}
+	section#firesauce p {
+		color: rgba(255, 255, 255, 0.71);
+	}
+	section#firesauce a {
+		color: #fff;
+	}
 	
 	section#chromemote {
 		background: #00A3B1;
@@ -309,13 +333,132 @@ section.project .hero {
 		color: #fff;
 	}
 	section#flinger h3 {
-		color: #fbdcd8;
+		color: rgba(255, 255, 255, 0.7);
 	}
 	section#flinger p {
-		color: #fbdcd8;
+		color: rgba(255, 255, 255, 0.7);
 	}
 	section#flinger a {
-		color: #fbbeb6;
+		color: #fff;
+	}
+
+	section#cmhouston {
+		background: #5ecbeb;
+		text-align: center;
+	}
+	section#cmhouston h2 {
+		color: #fff;
+	}
+	section#cmhouston h3 {
+		color: rgba(255, 255, 255, 0.63);
+	}
+	section#cmhouston p {
+		color: rgba(255, 255, 255, 0.63);
+	}
+	section#cmhouston a {
+		color: #fff;
+	}
+
+	section#cottonelle {
+		background: #002b4e;
+		text-align: center;
+	}
+	section#cottonelle h2 {
+		color: #fff;
+	}
+	section#cottonelle h3 {
+		color: rgba(255, 255, 255, 0.5);
+	}
+	section#cottonelle p {
+		color: rgba(255, 255, 255, 0.5);
+	}
+	section#cottonelle a {
+		color: #fff;
+	}
+
+	section#tichelper {
+		background: #6ac29a;
+		text-align: center;
+	}
+	section#tichelper h2 {
+		color: #fff;
+	}
+	section#tichelper h3 {
+		color: rgba(255, 255, 255, 0.7);
+	}
+	section#tichelper p {
+		color: rgba(255, 255, 255, 0.7);
+	}
+	section#tichelper a {
+		color: #fff;
+	}
+
+	section#questionbig {
+		background: #527fbf;
+		text-align: center;
+	}
+	section#questionbig h2 {
+		color: #fff;
+	}
+	section#questionbig h3 {
+		color: rgba(255, 255, 255, 0.58);
+	}
+	section#questionbig p {
+		color: rgba(255, 255, 255, 0.58);
+	}
+	section#questionbig a {
+		color: #fff;
+	}
+
+	section#braveisbeautiful {
+		background: #414060;
+		text-align: center;
+	}
+	section#braveisbeautiful h2 {
+		color: #fff;
+	}
+	section#braveisbeautiful h3 {
+		color: rgba(255, 255, 255, 0.65);
+	}
+	section#braveisbeautiful p {
+		color: rgba(255, 255, 255, 0.65);
+	}
+	section#braveisbeautiful a {
+		color: #fff;
+	}
+
+	section#bpotc2015 {
+		background: #43a41d;
+		text-align: center;
+	}
+	section#bpotc2015 h2 {
+		color: #fff;
+	}
+	section#bpotc2015 h3 {
+		color: rgba(255, 255, 255, 0.68);
+	}
+	section#bpotc2015 p {
+		color: rgba(255, 255, 255, 0.68);
+	}
+	section#bpotc2015 a {
+		color: #fff;
+	}
+
+	section#vgct {
+		background: #46bb75;
+		text-align: center;
+	}
+	section#vgct h2 {
+		color: #fff;
+	}
+	section#vgct h3 {
+		color: rgba(255, 255, 255, 0.85);
+	}
+	section#vgct p {
+		color: rgba(255, 255, 255, 0.85);
+	}
+	section#vgct a {
+		color: #fff;
 	}
 
 	section#contact {
@@ -364,6 +507,15 @@ section.project .hero {
 		vertical-align: top;
 		font-size: 30px;
 	}
+
+.section_title{
+	display: inline-block;
+	position: relative;
+	width: 100%; height: auto;
+	padding: 50px 15px;
+	text-align: center;
+	font-size: 50px;
+}
 
 
 footer#footer {
