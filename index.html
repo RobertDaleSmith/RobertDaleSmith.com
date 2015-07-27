@@ -57,6 +57,10 @@
 		
 		<!-- jQuery -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="libs/jquery/jquery.mobile.custom.min.js"></script>
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script
 
         <!-- BEGIN TimelineJS -->
         <!-- <script type="text/javascript" src="http://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js"></script> -->
@@ -82,10 +86,12 @@
 		
 	</head>
 	<body>
+
 		<header id="header">
 			<h1>ROBERT DALE SMITH</h1>
 			<h2>Digital Creative & Technopreneur</h2>
 		</header>
+		
 		<section id="intro">
 			<div class="column">
 
@@ -131,207 +137,222 @@
 			</div>
 		</section>
 
-		<section id="firesauce" class="project">
-		
-			
-			<img src="images/project_firesauce.png" alt="FireSauce.TV" width="640" class="hero">
-			<div class="column">
-			
-				<h2>FireSauce.TV</h2>
-				<h3>Full-Stack Web App Development</h3>
-				
-				<p>
-					Building a crowdsourced TV platform where anyone can curate their own live internet TV channel, simply by tweeting video links. Designed to make any Twitter user's feed into a live video playlist by gathering links containing YouTube links that user tweets.
-				</p>
-				
-				<p class="linkout"><a href="http://firesauce.tv/RobertDaleSmith" target="_blank"><i class="fa fa-globe"></i>Try this project <i class="fa fa-long-arrow-right"></i></a></p>
-			
-			</div>
+		<div id="offset_container"></div>
 
+		<section id="firesauce" class="project">
+			<div class="wrapper"><div class="content">
+
+				<img src="images/project_firesauce.png" alt="FireSauce.TV" width="369" class="hero">
+				<div class="column">
+				
+					<h2>FireSauce.TV</h2>
+					<h3>Full-Stack Web App Development</h3>
+					
+					<p>
+						Building a crowdsourced TV platform where anyone can curate their own live internet TV channel, simply by tweeting video links. Designed to make any Twitter user's feed into a live video playlist by gathering links containing YouTube links that user tweets.
+					</p>
+					
+					<p class="linkout"><a href="http://firesauce.tv/RobertDaleSmith" target="_blank"><i class="fa fa-globe"></i>Try this project <i class="fa fa-long-arrow-right"></i></a></p>
+				
+				</div>
+
+			</div></div>
+
+			<div class="trigger"></div>
 		</section>
 
-		<div class="section_title"><a href="http://pixatronic.com/" target="_blank">Pixatronic Ventures</a></div>
+		<section class="title"><a href="http://pixatronic.com/" target="_blank">Pixatronic Ventures</a></section>
 
 		<section id="questionbig" class="project">
-		
-			<img src="images/project_questionbig.png" alt="QuestionBig" width="400" class="hero">
-			
-			<div class="column">
-			
-				<h2>QuestionBig</h2>
-				<h3>Full-Stack Web Development (Node.js)</h3>
-				
-				<p>
-					Codeveloped an <a href="http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/" target="_blank">isomorphic javascript</a> website on top of <a href="http://sailsjs.org/" target="_blank">Sails.js</a> MVC using <a href="http://www.dustjs.com/" target="_blank">Dust.js</a> for rendering HTML templates on both the frontend and backend. Collaborated with two other developers and a designer to bring to life a client's startup idea to help people find answers to the biggest questions in life.
-				</p>
-				
-				<p class="linkout"><a href="http://dev.questionbig.com/" target="_blank"><i class="fa fa-globe"></i>Preview this project <i class="fa fa-long-arrow-right"></i></a></p>
-			
-			</div>
+			<div class="wrapper"><div class="content">
 
+				<img src="images/project_questionbig.png" alt="QuestionBig" width="400" class="hero">
+				
+				<div class="column">
+				
+					<h2>QuestionBig</h2>
+					<h3>Full-Stack Web Development (Node.js)</h3>
+					
+					<p>
+						Codeveloped an <a href="http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/" target="_blank">isomorphic javascript</a> website on top of <a href="http://sailsjs.org/" target="_blank">Sails.js</a> MVC using <a href="http://www.dustjs.com/" target="_blank">Dust.js</a> for rendering HTML templates on both the frontend and backend. Collaborated with two other developers and a designer to bring to life a client's startup idea to help people find answers to the biggest questions in life.
+					</p>
+					
+					<p class="linkout"><a href="http://dev.questionbig.com/" target="_blank"><i class="fa fa-globe"></i>Preview this project <i class="fa fa-long-arrow-right"></i></a></p>
+				
+				</div>
+				
+			</div></div>
+
+			<div class="trigger"></div>
 		</section>
 
-		<div class="section_title"><a href="http://bouncingpixel.com/" target="_blank">Bouncing Pixel</a></div>
+		<section class="title"><a href="http://bouncingpixel.com/" target="_blank">Bouncing Pixel</a></section>
 
 		<section id="bpotc2015" class="project">
-		
-			<img src="images/project_bpotc2015.png" alt="BP Map - OTC 2015" width="650" class="hero">
-			
-			<div class="column">
-			
-				<h2>BP Map - OTC 2015</h2>
-				<h3>Desktop Application Development (NW.js)</h3>
+			<div class="wrapper"><div class="content">
 				
-				<p>
-					Built an interactive map application to run fullscreen on a massive touchscreen TV at the 2015 <a href="http://2015.otcnet.org/" target="_blank">Offshore Technology Conference</a>. Packaged HTML5 source into Windows and Mac OSX applications with <a href="https://github.com/nwjs/nw.js/" target="_blank">node-webkit</a>. Designed application to read a (JSON) data file and to dynamically render content using prebuilt <a href="http://www.dustjs.com/" target="_blank">Dust.js</a> templates. Wrote a custom SVG animation javascript library for animating arrow paths along bézier curves.
-
-					<!-- Data Driven, desktop application, SVG animation, bezier curves, node-webkit, 2015 , -->
-				</p>
+				<img src="images/project_bpotc2015.gif" alt="BP Map - OTC 2015" width="650" class="hero">
 				
-				<p class="linkout"><a href="http://bp-otc-2015.herokuapp.com/" target="_blank"><i class="fa fa-globe"></i>Demo this project <i class="fa fa-long-arrow-right"></i></a></p>
-			
-			</div>
+				<div class="column">
+				
+					<h2>BP Map - OTC 2015</h2>
+					<h3>Desktop Application Development (NW.js)</h3>
+					
+					<p>
+						Built an interactive map application to run fullscreen on a massive touchscreen TV at the 2015 <a href="http://2015.otcnet.org/" target="_blank">Offshore Technology Conference</a>. Packaged HTML5 source into Windows and Mac OSX applications with <a href="https://github.com/nwjs/nw.js/" target="_blank">node-webkit</a>. Designed application to read a (JSON) data file and to dynamically render content using prebuilt <a href="http://www.dustjs.com/" target="_blank">Dust.js</a> templates. Wrote a custom SVG animation javascript library for animating arrow paths along bézier curves.
+					</p>
+					
+					<p class="linkout"><a href="http://bp-otc-2015.herokuapp.com/" target="_blank"><i class="fa fa-globe"></i>Demo this project <i class="fa fa-long-arrow-right"></i></a></p>
+				
+				</div>
 
+			</div></div>
+
+			<div class="trigger"></div>
 		</section>
 
 		<section id="tichelper" class="project">
-		
-			<img src="images/project_tichelper.png" alt="TicHelper" width="600" class="hero">
-			
-			<div class="column">
-			
-				<h2>TicHelper</h2>
-				<h3>Web App Development (Polymer)</h3>
-				
-				<p>
-					Collaborated with one other developer and the awesome designers at <a href="http://www.aleberrycreative.com/" target="_blank">Aleberry</a> to develop a single-page application that provides at-home training sessions to help kids with tourette's. Crafted the frontend using Google's <a href="http://www.polymer-project.org/" target="_blank">Polymer</a>. Built backend on Node/Express/Mongo for user authentication and data storage. Implemented Stripe API for registration and subscription fees. Project's development featured on <a href="http://www.npr.org/sections/health-shots/2015/07/22/424722960/for-kids-with-tourettes-at-home-training-could-help" target="_blank">NPR</a>.
-				</p>
-				
-				<p class="linkout"><a href="http://dev.tichlper.com/" target="_blank"><i class="fa fa-globe"></i>View this project <i class="fa fa-long-arrow-right"></i></a></p>
-			
-			</div>
+			<div class="wrapper"><div class="content">
 
+				<img src="images/project_tichelper.png" alt="TicHelper" width="600" class="hero">
+			
+				<div class="column">
+				
+					<h2>TicHelper</h2>
+					<h3>Web App Development (Polymer)</h3>
+					
+					<p>
+						Collaborated with one other developer and the awesome designers at <a href="http://www.aleberrycreative.com/" target="_blank">Aleberry</a> to develop a single-page application that provides at-home training sessions to help kids with tourette's. Crafted the frontend using Google's <a href="http://www.polymer-project.org/" target="_blank">Polymer</a>. Built backend on Node/Express/Mongo for user authentication and data storage. Implemented Stripe API for registration and subscription fees. Project's development featured on <a href="http://www.npr.org/sections/health-shots/2015/07/22/424722960/for-kids-with-tourettes-at-home-training-could-help" target="_blank">NPR</a>.
+					</p>
+					
+					<p class="linkout"><a href="http://dev.tichlper.com/" target="_blank"><i class="fa fa-globe"></i>View this project <i class="fa fa-long-arrow-right"></i></a></p>
+				
+				</div>
+				
+			</div></div>
+
+			<div class="trigger"></div>
 		</section>
 
 		<section id="cmhouston" class="project">
-		
-			<img src="images/project_cmhouston.png" alt="Children's Musuem of Houston" width="620" class="hero">
-			
-			<div class="column">
-			
-				<h2>Children's Musuem of Houston</h2>
-				<h3>Full-Stack Web Development (Node.js)</h3>
-				
-				<p>
-					Led development with three designers and one other developer to create a responsive, <a href="http://www.cmhouston.org/?theme=winter" target="_blank">themeable</a> website with a totally custom built CMS tailored to the museum's needs. Crafted the frontend using <a href="http://www.dustjs.com/" target="_blank">Dust.js</a> with a bit of jQuery. Implemented ImageMagic on the backend to automate resize and cropping of each page's primary content image. Used GridFS to store user uploaded files within the database itself.
-				</p>
-				
-				<p class="linkout"><a href="http://cmhouston.org/" target="_blank"><i class="fa fa-globe"></i>View this project <i class="fa fa-long-arrow-right"></i></a></p>
-			
-			</div>
+			<div class="wrapper"><div class="content">
 
+				<img src="images/project_cmhouston.png" alt="Children's Musuem of Houston" width="620" class="hero">
+			
+				<div class="column">
+				
+					<h2>Children's Musuem of&nbsp;Houston</h2>
+					<h3>Full-Stack Web Development (Node.js)</h3>
+					
+					<p>
+						Led development with three designers and one other developer to create a responsive, <a href="http://www.cmhouston.org/?theme=winter" target="_blank">themeable</a> website with a totally custom built CMS tailored to the museum's needs. Crafted the frontend using <a href="http://www.dustjs.com/" target="_blank">Dust.js</a> with a bit of jQuery. Implemented ImageMagic on the backend to automate resize and cropping of each page's primary content image. Used GridFS to store user uploaded files within the database itself.
+					</p>
+					
+					<p class="linkout"><a href="http://cmhouston.org/" target="_blank"><i class="fa fa-globe"></i>View this project <i class="fa fa-long-arrow-right"></i></a></p>
+				
+				</div>
+
+			</div></div>
+
+			<div class="trigger"></div>
 		</section>
 
-		<!-- <section id="vgct" class="project">
-		
-			<img src="images/project_vgct.png" alt="Brave is Beautiful" width="600" class="hero">
-			
-			<div class="column">
-			
-				<h2>Video Game Controller Training</h2>
-				<h3>Game Development (Unity/C#)</h3>
-				
-				<p>
-					
-				</p>
-				
-				<p class="linkout"><a href="http://rdal.es/VeeGeeCeeTee" target="_blank"><i class="fa fa-globe"></i>View this project <i class="fa fa-long-arrow-right"></i></a></p>
-			
-			</div>
-
-		</section> -->
-
 		<section id="braveisbeautiful" class="project">
-		
-			<img src="images/project_braveisbeautiful.png" alt="Brave is Beautiful" width="600" class="hero">
-			
-			<div class="column">
-			
-				<h2>Brave is Beautiful</h2>
-				<h3>Front-End Web Development (PHP)</h3>
-				
-				<p>
-					Worked closely with a designer to recover a PHP based website that had been previously abandoned by another developer. Adapted existing layout into a set of reusable responsive templates. Created a linear user experience to guide and inform patients of the treatment process. Implemented the <a href="https://developer.vimeo.com/player/js-api" target="_blank">Vimeo Player JavaScript API</a> to automatically stop playback of active videos that have been scrolled out of view.
-				</p>
-				
-				<p class="linkout"><a href="http://braveisbeautiful.com/" target="_blank"><i class="fa fa-globe"></i>View this project <i class="fa fa-long-arrow-right"></i></a></p>
-			
-			</div>
+			<div class="wrapper"><div class="content">
 
+				<img src="images/project_braveisbeautiful.png" alt="Brave is Beautiful" width="600" class="hero">
+			
+				<div class="column">
+				
+					<h2>Brave is Beautiful</h2>
+					<h3>Front-End Web Development (PHP)</h3>
+					
+					<p>
+						Worked closely with a designer to recover a PHP based website that had been previously abandoned by another developer. Adapted existing layout into a set of reusable responsive templates. Created a linear user experience to guide and inform patients of the treatment process. Implemented the <a href="https://developer.vimeo.com/player/js-api" target="_blank">Vimeo Player JavaScript API</a> to automatically stop playback of active videos that have been scrolled out of view.
+					</p>
+					
+					<p class="linkout"><a href="http://braveisbeautiful.com/" target="_blank"><i class="fa fa-globe"></i>View this project <i class="fa fa-long-arrow-right"></i></a></p>
+				
+				</div>
+
+			</div></div>
+
+			<div class="trigger"></div>
 		</section>
 
 		<section id="cottonelle" class="project">
-		
-			<img src="images/project_cottonelle.png" alt="#LetsTalkBums Cottonelle Micro-site" width="450" class="hero">
-			
-			<div class="column">
-			
-				<h2>#LetsTalkBums Cottonelle Micro-site</h2>
-				<h3>Full-Stack Web Development (Node.js)</h3>
+			<div class="wrapper"><div class="content">
 				
-				<p>
-					Developed a haiku Twitter contest micro-site with Node.js that includes a custom CMS for accepting tweets and selecting weekly winners. Built out designer's mockups and styled into a fully functional responsive layout. Implemented the Twitter API on the backend to cache recent tweets containing the hashtag <a href="https://twitter.com/search?q=%23LetsTalkBums%20%23haiku" target="_blank">#LetsTalkBums</a> to a MongoDB database and to await admin approval before displaying them on the contest page.
-				</p>
-				
-				<p class="linkout"><a href="http://wipingpoetic.com/" target="_blank"><i class="fa fa-globe"></i>View this project <i class="fa fa-long-arrow-right"></i></a></p>
+				<img src="images/project_cottonelle.png" alt="#LetsTalkBums Cottonelle Micro-site" width="450" class="hero">
 			
-			</div>
+				<div class="column">
+				
+					<h2>#LetsTalkBums Cottonelle Micro-site</h2>
+					<h3>Full-Stack Web Development (Node.js)</h3>
+					
+					<p>
+						Developed a haiku Twitter contest micro-site with Node.js that includes a custom CMS for accepting tweets and selecting weekly winners. Built out designer's mockups and styled into a fully functional responsive layout. Implemented the Twitter API on the backend to cache recent tweets containing the hashtag <a href="https://twitter.com/search?q=%23LetsTalkBums%20%23haiku" target="_blank">#LetsTalkBums</a> to a MongoDB database and to await admin approval before displaying them on the contest page.
+					</p>
+					
+					<p class="linkout"><a href="http://wipingpoetic.com/" target="_blank"><i class="fa fa-globe"></i>View this project <i class="fa fa-long-arrow-right"></i></a></p>
+				
+				</div>
 
+			</div></div>
+
+			<div class="trigger"></div>
 		</section>
 
-		<div class="section_title"><a href="http://motelabs.com/" target="_blank">Mote Labs</a></div>
+		<section class="title"><a href="http://motelabs.com/" target="_blank">Mote Labs</a></section>
 
 		<section id="flinger" class="project">
-		
-			<img src="images/project_flinger.png" alt="Flinger.co" width="450" class="hero">
+			<div class="wrapper"><div class="content">
+				<img src="images/project_flinger.png" alt="Flinger.co" width="450" class="hero">
 			
-			<div class="column">
-			
-				<h2>Flinger.co</h2>
-				<h3>Web & Mobile App Development</h3>
+				<div class="column">
 				
-				<p>
-					Built a cross-platform remote control application to enable users to control web video playback on a second screen web app. Implemented real-time communication backend with <a href="http://sharejs.org/" target="_blank">ShareJS</a> to enable an unlimited number of remotes to control an unlimited number of screens. Developed a single JavaScript codebase for the remote app and ported it to Android, iOS, WindowsPhone, Windows 8, as well as a Chrome browser extension.
-				</p>
+					<h2>Flinger.co</h2>
+					<h3>Web & Mobile App Development</h3>
+					
+					<p>
+						Built a cross-platform remote control application to enable users to control web video playback on a second screen web app. Implemented real-time communication backend with <a href="http://sharejs.org/" target="_blank">ShareJS</a> to enable an unlimited number of remotes to control an unlimited number of screens. Developed a single JavaScript codebase for the remote app and ported it to Android, iOS, WindowsPhone, Windows 8, as well as a Chrome browser extension.
+					</p>
+					
+					<p class="linkout"><a href="http://flinger.co/" target="_blank"><i class="fa fa-globe"></i>View this project <i class="fa fa-long-arrow-right"></i></a></p>
 				
-				<p class="linkout"><a href="http://flinger.co/" target="_blank"><i class="fa fa-globe"></i>View this project <i class="fa fa-long-arrow-right"></i></a></p>
-			
-			</div>
+				</div>
+
+			</div></div>
+
+			<div class="trigger"></div>
 		</section>
 
 		<section id="chromemote" class="project">
-		
-			<img src="images/project_chromemote.png" alt="Chromemote" width="450" class="hero">
-			
-			<div class="column">
-			
-				<h2>Chromemote</h2>
-				<h3>Google Chrome Extension Development</h3>
+			<div class="wrapper"><div class="content">
+				<img src="images/project_chromemote.png" alt="Chromemote" width="450" class="hero">
 				
-				<p>
-					Designed, built, and launched Chrome browser extension that grew to over 30k daily active users. Featured on multiple tech news sites like <a href="http://lifehacker.com/5928415/chromemote-is-a-google-tv-remote-that-lives-in-chrome" target="_blank">Lifehacker</a> and <a href="http://www.youtube.com/watch?v=oIoKiZYmpXo" target="_blank">GigaOm</a>. Pitched at <a href="http://3daystartup.org/companies-founded-by-3ds-alumni/" target="_blank">3DayStartup</a> and founded <a href="http://www.motelabs.com/" target="_blank">Mote Labs</a>. Original UI written in Java using Google Web Toolkit. Later totally rewrote with just HTML/CSS/Javascript. Implemented <a href="https://code.google.com/p/anymote-protocol/" target="_blank">Anymote protocol</a> to enable communication between browser extensions and GoogleTVs.
-				</p>
+				<div class="column">
 				
-				<p class="linkout"><a href="http://chromemote.com/" target="_blank"><i class="fa fa-globe"></i>View this project <i class="fa fa-long-arrow-right"></i></a></p>
-			
-			</div>
+					<h2>Chromemote</h2>
+					<h3>Google Chrome Extension Development</h3>
+					
+					<p>
+						Designed, built, and launched Chrome browser extension that grew to over 30k daily active users. Featured on multiple tech news sites like <a href="http://lifehacker.com/5928415/chromemote-is-a-google-tv-remote-that-lives-in-chrome" target="_blank">Lifehacker</a> and <a href="http://www.youtube.com/watch?v=oIoKiZYmpXo" target="_blank">GigaOm</a>. Pitched at <a href="http://3daystartup.org/companies-founded-by-3ds-alumni/" target="_blank">3DayStartup</a> and founded <a href="http://www.motelabs.com/" target="_blank">Mote Labs</a>. Original UI written in Java using Google Web Toolkit. Later totally rewrote with just HTML/CSS/Javascript. Implemented <a href="https://code.google.com/p/anymote-protocol/" target="_blank">Anymote protocol</a> to enable communication between browser extensions and GoogleTVs.
+					</p>
+					
+					<p class="linkout"><a href="http://chromemote.com/" target="_blank"><i class="fa fa-globe"></i>View this project <i class="fa fa-long-arrow-right"></i></a></p>
+				
+				</div>
+
+			</div></div>
+
+			<div class="trigger"></div>
 		</section>
 
 		<section id="contact">
 			<h3>If you have an exciting project feel free to drop me a line.</h3>
 			<a href="mailto:robert@robertdalesmith.com" class="btn"><i class="fa fa-envelope-o"></i>Email Me</a>
 		</section>
-
 
 		<footer id="footer">
 	    	<p>© 2015 <a href="mailto:robert@robertdalesmith.com">Robert Dale Smith</a>. Made&nbsp;in&nbsp;Houston,&nbsp;TX.</p>

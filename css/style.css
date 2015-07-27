@@ -20,14 +20,28 @@
 }
 
 html, body{
-	display: block;
-	position: relative;
+    display: inline-block;
+    position: relative;
 	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	margin: 0;
 	padding: 0;
 	color: #999;
 	background-color: #FFFFFF;
+	width: 100%; min-width: 320px;
+	height: auto;
+
+	-webkit-overflow-scrolling: auto;
+}
+
+#scroll_trigger{
+	display: inline-block;
+	position: fixed;
+	right: 0px; bottom: 0px;
+	height: 1px; width: 200px;
+	z-index: 10;
+	/*opacity: 0;*/
+	background-color: #000000;
 }
 
 a{
@@ -117,7 +131,10 @@ header#header h2 {
 section {
 	display: inline-block;
 	position: relative;
-	width: 100%;
+	float: left;
+	width: 100%; height: auto;
+	min-width: 320px;
+	-webkit-transform: translate3d(0,0,0);
 }
 
 section#intro {
@@ -132,7 +149,7 @@ section#intro {
 	}
 	section#intro p {
 		font-size: 18px;
-		line-height: 2;
+		line-height: 2.3em;
 		color: #999;
 		padding-bottom: 25px;
 		font-weight: 300;
@@ -234,7 +251,26 @@ footer#footer ul.social li.link-github a:hover {
 	
 
 section.project {
-	padding: 100px 15px;
+	padding: 100px 5%;
+	z-index: 2;
+	/*min-height: 100%;*/
+
+}
+section.project .wrapper{
+	display: table;
+	position: relative;
+	width: 100%;
+}
+section.project .wrapper .content{
+	display: table-cell;
+	vertical-align: middle;
+}
+section.project .trigger{
+	display: inline-block;
+	position: absolute;
+	left: 0px; bottom: 0px;
+	width: 100%; height: 1px;
+	background-color: transparent;
 }
 section.project .column {
 	max-width: 600px;
@@ -289,6 +325,40 @@ section.project p.linkout a:hover i.fa-long-arrow-right {
 }
 section.project .hero {
 	margin-bottom: 70px;
+}
+
+section.project.past,
+section.title.past {
+	display: inline-block;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: auto; width: 100%;
+	z-index: 1;
+
+}
+
+section.title{
+	display: inline-block;
+	position: relative;
+	width: 100%; height: auto;
+	float: left;
+	padding: 50px 15px;
+	text-align: center;
+	font-size: 50px;
+	background-color: #ffffff;
+	z-index: 2;
+}
+
+section#contact {
+	z-index: 3;
+}
+
+#offset_container{
+	display: inline-block;
+	position: relative;
+	float: left;
+	width: 100%; height: 0px;
 }
 
 	section#firesauce {
@@ -508,21 +578,16 @@ section.project .hero {
 		font-size: 30px;
 	}
 
-.section_title{
+footer#footer {
 	display: inline-block;
 	position: relative;
 	width: 100%; height: auto;
-	padding: 50px 15px;
-	text-align: center;
-	font-size: 50px;
-}
-
-
-footer#footer {
+	float: left;
 	color: #ccc;
 	background: #2b2b2b;
 	text-align: center;
 	padding: 65px 15px 90px 15px;
+	z-index: 10;
 }
 footer#footer p {
 	font-size: 15px;
@@ -541,21 +606,20 @@ footer#footer p a {
 		border-bottom-color: #ff4f00;
 	}
 
-
-
-
-
-
-
 @media (max-width: 660px) {
 	header#header h1{
 		font-size: 40px;
 		letter-spacing: 7px;
 	}
+	section#intro .column{
+		padding: 0 7%;
+	}
+	section#intro p {
+    	font-size: 16px;
+    }
 }
 
-
-@media (max-width: 600px) {
+@media (max-width: 614px) {
 	header#header {
 		text-align: center;
 		background: #f2f2f2;
@@ -570,7 +634,7 @@ footer#footer p a {
 	}
 	section#intro p {
 		font-size: 16px;
-		line-height: 1.8;
+		/*line-height: 1.8;*/
 		color: #999;
 	}
 	section.clients p {
@@ -607,13 +671,12 @@ footer#footer p a {
 	}
 }
 
-
 @media (max-width: 400px) {
 	header#header h1{
-		font-size: 20px;
+		font-size: 24px;
 		letter-spacing: 4px;
 	}
 	header#header h2 {
-		font-size: 12px;
+		font-size: 13px;
 	}
 }
