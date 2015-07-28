@@ -34,6 +34,11 @@ html, body{
 	-webkit-overflow-scrolling: auto;
 }
 
+body{
+	float: left;    
+	overflow-x:hidden;
+}
+
 #scroll_trigger{
 	display: inline-block;
 	position: fixed;
