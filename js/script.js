@@ -1,6 +1,6 @@
-$(window).on('resize', updateState);
-$(window).on('scroll', updateState);
-$(window).on('touchmove', updateState);
+// $(window).on('resize', updateState);
+// $(window).on('scroll', updateState);
+// $(window).on('touchmove', updateState);
 
 // var isScrolling;
 // $(document).on("scrollstart",function(){

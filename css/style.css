@@ -183,6 +183,18 @@ section#intro {
 		color: #10a4e3;
 		border-color: #10a4e3;
 	}
+	section#intro a.link-firesauce:hover {
+		color: #eb5900;
+		border-color: #eb5900;
+	}
+	section#intro a.link-appsumo:hover {
+		color: #2ba6cb;
+		border-color: #2ba6cb;
+	}
+	section#intro a.link-sumome:hover {
+		color: #0f52ba;
+		border-color: #0f52ba;
+	}
 
 ul.social {
 	list-style: none;
